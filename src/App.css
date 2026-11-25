@@ -1,0 +1,309 @@
+.dashboard {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 28px 0 24px;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e8edf0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #173a36;
+  font-size: 19px;
+  font-weight: 750;
+  letter-spacing: -0.5px;
+}
+
+.brand-icon {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border-radius: 9px;
+  background: #dff4e9;
+  color: #18835e;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.today {
+  color: #697a78;
+  font-size: 13px;
+}
+
+.intro {
+  padding: 34px 0 26px;
+}
+
+.eyebrow {
+  color: #32816c;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+}
+
+.intro h1 {
+  margin: 9px 0 5px;
+  color: #1d3432;
+  font-size: 30px;
+  font-weight: 650;
+  letter-spacing: -1px;
+}
+
+.intro p,
+.card-heading p {
+  margin: 0;
+  color: #71817f;
+  font-size: 14px;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.summary > div {
+  display: flex;
+  min-height: 83px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  padding: 0 20px;
+  border: 1px solid #e9efed;
+  border-radius: 11px;
+  background: #fff;
+}
+
+.summary-label {
+  color: #71817f;
+  font-size: 12px;
+}
+
+.summary strong {
+  color: #213936;
+  font-size: 21px;
+  line-height: 1;
+}
+
+.summary .next-time {
+  color: #248364;
+  font-size: 19px;
+}
+
+.patients-card {
+  overflow: hidden;
+  border: 1px solid #e6ecea;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(29, 62, 53, 0.035);
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 21px 22px;
+}
+
+.card-heading h2 {
+  margin: 0 0 5px;
+  color: #203936;
+  font-size: 17px;
+  font-weight: 650;
+}
+
+.card-heading p {
+  font-size: 12px;
+}
+
+.search {
+  display: flex;
+  width: 210px;
+  height: 36px;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  border: 1px solid #e3e9e7;
+  border-radius: 7px;
+  color: #778582;
+}
+
+.search span {
+  font-size: 21px;
+  line-height: 1;
+}
+
+.search input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #263d39;
+  font: inherit;
+  font-size: 12px;
+}
+
+.search input::placeholder {
+  color: #98a39f;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  white-space: nowrap;
+}
+
+thead {
+  background: #f7f9f8;
+}
+
+th {
+  padding: 11px 22px;
+  color: #74817e;
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 0.3px;
+}
+
+td {
+  padding: 15px 22px;
+  border-top: 1px solid #eef1f0;
+  color: #52635f;
+  font-size: 12px;
+}
+
+.patient-id {
+  color: #647672;
+  font-variant-numeric: tabular-nums;
+}
+
+.patient-name {
+  color: #263b37;
+  font-weight: 600;
+}
+
+.appointment-time {
+  color: #314943;
+  font-weight: 550;
+  font-variant-numeric: tabular-nums;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 8px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.status::before {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  content: '';
+}
+
+.status-checked-in {
+  background: #e8f7ef;
+  color: #23845c;
+}
+
+.status-in-progress {
+  background: #edf2ff;
+  color: #556dc4;
+}
+
+.status-waiting {
+  background: #fff5e5;
+  color: #b27b22;
+}
+
+.status-confirmed {
+  background: #f0f3f2;
+  color: #697874;
+}
+
+.empty {
+  padding: 35px 20px;
+  color: #71817f;
+  text-align: center;
+}
+
+.table-footer {
+  padding: 13px 22px;
+  border-top: 1px solid #eef1f0;
+  color: #83908d;
+  font-size: 11px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 23px 0 0;
+  color: #889490;
+  font-size: 11px;
+}
+
+.footer span {
+  color: #9db8ac;
+}
+
+@media (max-width: 620px) {
+  .dashboard {
+    width: calc(100% - 28px);
+    padding-top: 18px;
+  }
+
+  .intro {
+    padding-top: 26px;
+  }
+
+  .intro h1 {
+    font-size: 25px;
+  }
+
+  .summary {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .summary > div {
+    min-height: 68px;
+  }
+
+  .card-heading {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 18px 16px;
+  }
+
+  .search {
+    width: auto;
+  }
+
+  th,
+  td {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
